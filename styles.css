@@ -1,0 +1,45 @@
+body {
+  background-color: antiquewhite;
+}
+
+#header {
+  font-size: 25px;
+}
+
+#homepage-image {
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  text-align: right;
+  padding: 20% 5%;
+  color: #2F3F3F;
+  font-family: Georgia;
+}
+#info h1 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+#contact {
+  margin-top: 15px;
+}
+#contact a {
+  font-family: Monaco;
+  color: gray;
+}
+
+.center {
+  width: 60%;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.center-content {
+  width: 50%;
+  float: left;
+}
+
