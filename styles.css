@@ -16,12 +16,15 @@ html {
   margin-bottom: 5px;
 }
 
-#contact a {
-  font-family: Monaco;
+#info a {
   color: gray;
 }
-#contact a:hover {
+#info a:hover {
   color: #606060;
+}
+#info #contact a {
+  font-family: Monaco;
+  color: gray;
 }
 
 .center {
