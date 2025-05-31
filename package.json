@@ -1,0 +1,36 @@
+{
+  "name": "sarah-foulkes-portfolio.github.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/homepage.js -o build/homepage.js",
+    "watch": "watchify src/homepage.js -o build/homepage.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarah-foulkes-portfolio/sarah-foulkes-portfolio.github.io.git"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  },
+  "author": "Austin Dunn",
+  "homepage": "https://github.com/sarah-foulkes-portfolio/sarah-foulkes-portfolio.github.io#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "node-polyglot": "^2.5.0",
+    "watchify": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "babel-core": "^6.26.3",
+    "babelify": "^10.0.0"
+  }
+}
