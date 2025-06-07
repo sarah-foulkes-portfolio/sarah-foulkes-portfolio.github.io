@@ -1,0 +1,57 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+html {
+  background-color: antiquewhite;
+}
+
+#info {
+  text-align: right;
+  padding: 10% 5%;
+  color: #2F3F3F;
+  font-family: Georgia;
+}
+#info #header {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+#info a {
+  color: gray;
+}
+#info a:hover {
+  color: #606060;
+}
+#info #contact a {
+  font-family: Monaco;
+  color: gray;
+}
+
+.center {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.language-switcher a {
+  color: #2F3F3F;
+  text-decoration: none;
+  font-family: Monaco, monospace;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+.language-switcher a:hover {
+  background-color: rgba(47, 63, 63, 0.1);
+}
+
