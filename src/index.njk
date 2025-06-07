@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Sarah Foulkes
+jsFile: homepage.js
+lang: en
+permalink: /
+---
+
+<div class="column">
+    <div id="info">
+        <h1 id="header">Sarah Beatrice Foulkes</h1>
+        <a onclick="playPronunciation()">/'sɛərə 'biː(ə)trɪs faʊks/</a>
+        <audio id="audio-pronunciation">
+            <source src="/media/audio/name_pronunciation.mp3" type="audio/mpeg">
+        </audio>
+        <br><br>
+        <i>{{ 'profession' | t(lang) }}</i>
+        <br><br>
+        <div id="contact">
+            <a href="mailto:sarahfoulkes11@gmail.com">sarahfoulkes11@gmail.com</a>
+            <br>
+            <a href="https://vimeo.com/user52409721">vimeo</a>
+        </div>
+    </div>
+</div>
+
+<div class="column">
+    <img src="/media/images/sarah-with-artwords-bag.jpg">
+</div>

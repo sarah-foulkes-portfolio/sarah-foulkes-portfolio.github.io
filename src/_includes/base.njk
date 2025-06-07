@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ lang or 'en' }}">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>{{ title or "Sarah Foulkes" }}</title>
+    {% if jsFile %}<script src="/build/{{ jsFile }}"></script>{% endif %}
+</head>
+<body>
+    <div class="language-switcher">
+      {% if lang == 'en' %}
+        <a href="/fr/">Français</a>
+      {% else %}
+        <a href="/">English</a>
+      {% endif %}
+    </div>
+    <div class="center columns is-desktop">
+        {{ content | safe }}
+    </div>
+</body>
+</html>

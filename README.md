@@ -2,9 +2,10 @@
 Professional website for Sarah Foulkes
 
 ## To access on local
-- `docker-compose up -d`
-- Visit `127.0.0.1:8080` or `localhost:8080`
+- `npm run watch`
+- Visit `127.0.0.1:8081` or `localhost:8081`
 
-## Viewing updates
-- For now, updates can be viewed by running `docker compose build` followed by `docker compose down; docker compose up -d`.
-- **Todo:** Fix this in the future using a volume so that updates happen instantly
+### To preview built site
+- `npm run build`
+- `npm run preview`
+- Visit `localhost:8000`
