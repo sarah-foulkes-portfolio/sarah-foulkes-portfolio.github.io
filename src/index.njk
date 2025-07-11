@@ -1,29 +1,49 @@
 ---
 layout: base.njk
-title: Sarah Foulkes
+pagination:
+  data: languages
+  size: 1
+  alias: page_data
 jsFile: homepage.js
-lang: en
-permalink: /
+eleventyComputed:
+  title: "{{ page_data.title }}"
+  lang: "{{ page_data.lang }}"
+  permalink: "{{ page_data.permalink }}"
 ---
 
-<div class="column">
-    <div id="info">
-        <h1 id="header">Sarah Beatrice Foulkes</h1>
-        <a onclick="playPronunciation()">/'sɛərə 'biː(ə)trɪs faʊks/</a>
-        <audio id="audio-pronunciation">
-            <source src="/media/audio/name_pronunciation.mp3" type="audio/mpeg">
-        </audio>
-        <br><br>
-        <i>{{ 'profession' | t(lang) }}</i>
-        <br><br>
-        <div id="contact">
-            <a href="mailto:sarahfoulkes11@gmail.com">sarahfoulkes11@gmail.com</a>
-            <br>
-            <a href="https://vimeo.com/user52409721">vimeo</a>
+<div class="center columns is-desktop" id="contact-card">
+    <div class="column">
+        <div id="info">
+            <h1 id="header">Sarah Beatrice Foulkes</h1>
+            <a onclick="playPronunciation()">/'sɛərə 'biː(ə)trɪs faʊks/</a>
+            <audio id="audio-pronunciation">
+                <source src="/media/audio/name_pronunciation.mp3" type="audio/mpeg">
+            </audio>
+            <br><br>
+            <i>{{ 'profession' | t(page_data.lang) }}</i>
+            <br><br>
+            <div id="contact">
+                <a href="mailto:sarahfoulkes11@gmail.com">sarahfoulkes11@gmail.com</a>
+                <br>
+                <a href="https://vimeo.com/user52409721">vimeo</a>
+            </div>
         </div>
+    </div>
+
+    <div class="column">
+        <img src="/media/images/sarah-with-artwords-bag.jpg" alt="Sarah standing in a Berlin museum">
     </div>
 </div>
 
-<div class="column">
-    <img src="/media/images/sarah-with-artwords-bag.jpg">
-</div>
+{# TODO: uncomment to bring these links back below the homepage content #}
+{#<div class="center columns is-desktop">#}
+{#    <div class="column page-link">#}
+{#        <a href="#" class="dark-bg-on-hover">About</a>#}
+{#    </div>#}
+{#    <div class="column page-link">#}
+{#        <a href="#" class="dark-bg-on-hover">Contact</a>#}
+{#    </div>#}
+{#    <div class="column page-link">#}
+{#        <a href="#" class="dark-bg-on-hover">Portfolio</a>#}
+{#    </div>#}
+{#</div>#}

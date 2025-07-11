@@ -8,13 +8,11 @@
 <body>
     <div class="language-switcher">
       {% if lang == 'en' %}
-        <a href="/fr/">Français</a>
+        <a href="/fr/" class="dark-bg-on-hover">Français</a>
       {% else %}
-        <a href="/">English</a>
+        <a href="/" class="dark-bg-on-hover">English</a>
       {% endif %}
     </div>
-    <div class="center columns is-desktop">
-        {{ content | safe }}
-    </div>
+    {{ content | safe }}
 </body>
 </html>

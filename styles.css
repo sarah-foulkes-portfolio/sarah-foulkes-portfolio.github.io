@@ -4,6 +4,9 @@ html {
   background-color: antiquewhite;
 }
 
+#contact-card {
+  padding: 100px 0 0;
+}
 #info {
   text-align: right;
   padding: 10% 5%;
@@ -18,6 +21,7 @@ html {
 
 #info a {
   color: gray;
+  font-family: Georgia;
 }
 #info a:hover {
   color: #606060;
@@ -29,10 +33,23 @@ html {
 
 .center {
   width: 70%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 0px 0;
+}
+
+a {
+  color: #2F3F3F;
+  text-decoration: none;
+  font-family: Monaco, monospace;
+}
+a.dark-bg-on-hover {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+a.dark-bg-on-hover:hover {
+  background-color: rgba(47, 63, 63, 0.1);
 }
 
 .language-switcher {
@@ -42,16 +59,11 @@ html {
   z-index: 1000;
 }
 .language-switcher a {
-  color: #2F3F3F;
-  text-decoration: none;
-  font-family: Monaco, monospace;
   font-size: 14px;
-  margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: background-color 0.2s ease;
 }
-.language-switcher a:hover {
-  background-color: rgba(47, 63, 63, 0.1);
+
+.page-link {
+  text-align: center;
+  font-family: Monaco;
 }
 
