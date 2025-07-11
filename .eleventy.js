@@ -1,10 +1,12 @@
 const addTranslationFilter = (key, lang) => {
   const translations = {
     en: {
+      about_content: 'Some information about Sarah Foulkes.',
       profession: "Filmmaker, writer",
     },
     fr: {
-      profession: "Cinéaste, écrivaine", 
+      profession: "Cinéaste, écrivaine",
+      about_content: 'Quelques infos à propos de Sarah Foulkes.',
     }
   };
   return translations[lang] && translations[lang][key] ? translations[lang][key] : key;

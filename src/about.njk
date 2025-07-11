@@ -1,0 +1,25 @@
+---
+layout: base.njk
+pagination:
+  data: languages
+  size: 1
+  alias: page_data
+eleventyComputed:
+  title: "{{ page_data.title }}"
+  lang: "{{ page_data.lang }}"
+  permalink: "{{ page_data.permalink_about }}"
+---
+
+<div class="center columns is-desktop" id="contact-card">
+    <div class="column">
+        <div id="info">
+            <h1 id="header">Sarah Beatrice Foulkes</h1>
+            <br><br>
+            <i>{{ 'about_content' | t(page_data.lang) }}</i>
+        </div>
+    </div>
+
+    <div class="column">
+        <img src="/media/images/sarah-with-artwords-bag.jpg" alt="Sarah standing in a Berlin museum">
+    </div>
+</div>
